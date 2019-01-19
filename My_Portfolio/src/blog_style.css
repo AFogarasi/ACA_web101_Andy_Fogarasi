@@ -1,0 +1,36 @@
+header  {
+background: lightslategray;
+}
+
+h1  {
+    width: 60%;
+    margin: 5% auto;
+    font-family: Blippo, fantasy;
+}   
+/*
+body {
+
+} */
+
+main{
+    width: 60%;
+    padding: 4px;
+    margin: 5% auto;
+    background: lightslategray;
+}
+
+article {
+    margin: 1% auto;
+    border: 2px solid lightsteelblue;
+    width: 80%;
+    background: white;
+    font-family: Blippo, fantasy;
+}
+
+article > h3{
+    font-size: 1em;
+}
+
+footer {
+    font-family: Blippo, fantasy;
+}
