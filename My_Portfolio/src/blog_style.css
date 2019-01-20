@@ -4,20 +4,37 @@ background: lightslategray;
 
 h1  {
     width: 60%;
-    margin: 5% auto;
+    margin: 1% auto;
     font-family: Blippo, fantasy;
 }   
+
+#Title {
+    background-color: aqua;
+}
+
+header > h3 {
+    width: 60%;
+    margin: 1% auto;
+    font-style: italic;
+    font-size: 1em;
+}
 /*
 body {
 
 
 } */
 
+h3 {font-size: 1em
+}
 main{
     width: 60%;
     padding: 4px;
     margin: 5% auto;
     background: lightslategray;
+}
+
+a:hover {
+    background-color: blueviolet;
 }
 
 article {
