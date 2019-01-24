@@ -1,0 +1,92 @@
+
+header {
+    background-color: rgb(138, 157, 177);    
+    display: grid;
+    grid-template-columns: auto;
+}
+    
+main {
+    background-color: rgb(215, 233, 252);
+}
+
+header > h1 {
+    width: auto;
+    vertical-align: center;
+    margin: 1px auto;
+    font-family: Garamond;
+    background-color: rgb(251, 253, 242);
+    border: 1px solid rgb(68, 80, 92);
+    text-align: center;
+    padding: 0px 25px 0px;
+    }
+    
+header > h2 {
+    font-family: Apple Chancery, cursive;
+    background-color: rgb(251, 253, 242);
+    text-align: center;
+    }    
+    
+header > h3 {
+    width: 60%;
+    margin: 1% auto;
+    font-style: italic;
+    font-size: 1em;
+    align-self: center;
+    background-color: antiquewhite;
+    border: 2px solid rgb(68, 80, 92);
+    }   
+    
+.main-container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+@media (min-width: 768px) {
+
+    .experience:nth-of-type(1) {order: 1;}
+    .experience:nth-of-type(2) {order: 3;}
+    .experience:nth-of-type(3) {order: 5;}
+    .experience:nth-of-type(4) {order: 2;}
+    .experience:nth-of-type(5) {order: 4;}
+    .experience:nth-of-type(6) {order: 6;}  
+
+    .main-container {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+    }     
+}
+    
+#profile-pic {
+    width: 200px;
+    height: 225px;
+    border-radius: 50%;
+    margin: 25px auto 1px;
+    border: 2px solid rgb(68, 80, 92);
+    }
+
+
+/*#vishanti-cert {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 25px auto 1px;
+    border: 2px solid rgb(68, 80, 92);
+}*/
+    
+h3 {font-size: 1em
+    }
+
+article {
+    margin: 2px auto;
+    border: 1px solid rgb(68, 80, 92);
+    width: 97%;
+    background: white;
+    font-family: Garamond;
+    font-size: 110%;
+    padding: 1%;
+    }
+    
+    footer {
+        font-family: Apple Chancery, cursive;
+    }
