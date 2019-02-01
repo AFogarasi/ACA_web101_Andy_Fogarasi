@@ -1,9 +1,10 @@
 header  {
 background: lightslategray;
+border-radius: 5px;
 }
 
 h1  {
-    width: 60%;
+    width: 85%;
     margin: 1% auto;
     font-family: Blippo, fantasy;
 }   
@@ -13,8 +14,8 @@ h1  {
 }
 
 header > h3 {
-    width: 60%;
-    margin: 1% auto;
+    width: 85%;
+    margin: 10px auto;
     font-style: italic;
     font-size: 1em;
 }
@@ -26,22 +27,24 @@ body {
 h3 {font-size: 1em
 }
 main{
-    width: 60%;
+    width: 95%;
     padding: 4px;
-    margin: 5% auto;
+    margin: 10px auto;
     background: lightslategray;
 }
 
 a:hover {
-    background-color: blueviolet;
+    background-color: rgb(207, 50, 10);
 }
 
 article {
     margin: 1% auto;
     border: 2px solid lightsteelblue;
-    width: 80%;
+    border-radius: 5px;
+    width: 90%;
     background: white;
     font-family: Blippo, fantasy;
+    padding: 10px;
 }
 
 article > h3{
