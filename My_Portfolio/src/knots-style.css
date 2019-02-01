@@ -1,0 +1,61 @@
+html { 
+    background: url(/My_Portfolio/Images/Taber.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+header  {
+    background: rgb(252, 243, 205);
+    border-radius: 5px;
+    padding: 0px 15px;
+    border: solid rgb(105, 55, 35);
+    }
+    
+h2 {
+    margin: 1px auto;
+    font-family: Garamond;
+} 
+
+p {
+    font-family: Garamond;
+    font-size: 150%;
+}
+
+.flex-container {
+    display: flex;
+    width: auto;
+    padding: 10px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: transparent;
+    margin: auto;
+}
+
+.flex-container > div {
+    background-color: rgb(252, 243, 205);
+    width: 300px;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 12px;
+    margin: 15px;
+}
+
+#knot-pic {
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+    border: solid rgb(105, 55, 35);
+    margin: 10px;
+    }
+
+img {
+    float: center;
+}     
+
+footer {
+    font-family: Blippo, fantasy;
+}
