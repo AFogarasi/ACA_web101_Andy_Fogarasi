@@ -14,12 +14,11 @@ h1 {
 h2 {
     color: aliceblue;
     font-size: 16px;
-    background-color: rgb(66, 73, 81);
+    background-color: rgb(58, 65, 56);
     height: 20px;
     margin: 4px;  
     padding-top: 5px;  
     border-radius: 10px;
-    border: 1px solid rgb(146, 145, 145);
 }
 
 h3 {
@@ -28,6 +27,7 @@ h3 {
 
 .flex-header> div {
     background-color:  rgb(104, 111, 98);
+    color: white;
     border-radius: 5px;
     width: 100px;
     margin: 0px 10px;
@@ -44,6 +44,7 @@ h3 {
 .container_stripe {
     width: 95%;
     background-color: silver;
+    border-bottom: 1px solid black;
     height: 10px;
     margin: auto;
 }
@@ -68,10 +69,11 @@ h3 {
     justify-content: center;
     align-items: center;
     background-color: rgb(151, 153, 143);
-    width: 250px;
+    width: 350px;
+    height: 350px;
     border-radius: 5px;
     font-size: 10px;
-    margin: 50px auto;
+    margin: 20px auto 20px;
 }
 
 .featured_buttons {
@@ -80,11 +82,12 @@ h3 {
     left: 5%;
 }
 
-#temp-pic {
-    width: 175px;
-    height: 250px;
+#Video_Surround {
+    width: 300px;
+    height: 300px;
     border-radius: 8px;
-    border: solid rgb(231, 96, 44);
+    background-color: black;
+    border: solid silver;
     margin: 10px;
     }
 
