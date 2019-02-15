@@ -130,6 +130,7 @@ h5 {
       }
 
     #todo-list {
+        padding-left: 100px;
         grid-row: 2 / 3;
         grid-column: 3 / 5; 
         align-self: right;
@@ -138,7 +139,6 @@ h5 {
 }
  
 article {
-    /* border: 2px solid black; */
     margin: 2px auto;
     width: 97%;
     background: transparent;
@@ -233,6 +233,8 @@ article {
 	margin-left: auto;
     margin-right: auto;
     padding: 10px;
+    
+
 }
 
 input[type='checkbox'] {
@@ -254,7 +256,8 @@ input[type='checkbox']:checked {
     font-size: 18px;
     text-align: left;
     border-bottom: 1px solid black;
-}
+    background: silver;
+} 
 
 .first-checkbox {
     grid-area: firstcheckbox;
