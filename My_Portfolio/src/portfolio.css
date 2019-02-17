@@ -99,4 +99,108 @@ h3 {
 a {
     color: silver;
   }  
-    
+
+
+.flex-main1 {
+    width: 95%;
+    background-color: rgb(104, 111, 98);
+    border-bottom: 20px solid rgb(104, 111, 98);
+    margin: auto;
+}
+
+form {
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 500px;
+    border-radius: 8px;
+    background: rgb(151, 153, 143);
+    padding: 25px 15px 25px 10px;
+    font: 12px Georgia, "Times New Roman", Times, serif;
+    color: rgb(21, 65, 28);
+    text-shadow: 1px 1px 1px rgb(78, 73, 73);
+}
+h3 {
+    font-size: 25px;
+    padding: 0px 0px 10px 40px;
+    display: block;
+    border-bottom:1px solid silver;
+    margin: -10px -15px 30px -10px;;
+    color: rgb(58, 65, 56);
+}
+h3 > span {
+    display: block;
+    font-size: 11px;
+}
+label {
+    display: block;
+    margin: 0px;
+}
+label > span {
+    float: left;
+    width: 20%;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+    color: rgb(58, 65, 56);
+}
+input[type="text"], input[type="email"], textarea, select {
+    border: 1px solid #DADADA;
+    color: rgb(58, 65, 56);
+    height: 30px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 3px 3px 3px 5px;
+    width: 70%;
+    font-size: 12px;
+    line-height:15px;
+    box-shadow: inset 0px 1px 4px silver;
+    -moz-box-shadow: inset 0px 1px 4px silver;
+    -webkit-box-shadow: inset 0px 1px 4px silver;
+}
+textarea{
+    padding: 5px 3px 3px 5px;
+}
+select {
+    background: silver url('down-arrow.png') no-repeat right;
+    background: silver url('down-arrow.png') no-repeat right;
+    appearance:none;
+    -webkit-appearance:none; 
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width: 70%;
+    height: 35px;
+    line-height: 25px;
+}
+textarea{
+    height:100px;
+}
+.button1 {
+    background: rgb(58, 65, 56);
+    border: 2px solid #F7F7F7;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    box-shadow: 1px 1px 5px silver;
+    border-radius: 3px;
+    text-shadow: 1px 1px 1px #9E3F3F;
+    cursor: pointer;
+}
+.button1:hover {
+    background: rgb(85, 151, 85)
+}
+.button2 {
+    background: #E27575;
+    border: 2px solid #F7F7F7;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    box-shadow: 1px 1px 5px #B6B6B6;
+    border-radius: 3px;
+    text-shadow: 1px 1px 1px rgb(141, 81, 81);
+    cursor: pointer;
+}
+.button2:hover {
+    background: rgb(224, 78, 78)
+}
+     
