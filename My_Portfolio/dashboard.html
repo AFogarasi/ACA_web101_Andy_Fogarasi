@@ -8,10 +8,19 @@
 <title>Andy's Dashboard</title>
 <Link rel="stylesheet" href="./src/dashboard-style.css">
 </head>
+    <script src="./src/scripts/dashboard.js"></script>
+    <body onload="myFunction()">
 
-<body>
     <header>
+
         <h1>Bonjour Andy!</h1>
+
+        <div class="head-container">
+            <button id = "findMe">Show my location</button><br/>
+            <p id = "status"></p>
+            <a id = "mapLink" target="_blank"></a>
+        </div>
+       
     </header>
 
 <main>
@@ -41,24 +50,24 @@
             <div class="box">+</div>
         </div>
         </p>
-    </article> 
+        </article> 
     </div>
 
-    <article> 
-    </article> 
+        <article> 
+        </article> 
 
-    <article>   
-    </article>
+        <article>   
+        </article>
 
     <div id="clock">
-    <article>
-        <h4>January 31, 2019</h4>
-        <div class="item_clock"><div class="clock"><img src="./src/Images/Clock.png" id="clock-pic"></div></div>               
-    </article>
+        <article>
+            <h4>January 31, 2019</h4>
+            <div class="item_clock"><div class="clock"><img src="./src/Images/Clock.png" id="clock-pic"></div></div>               
+        </article>
     </div>
 
     <div id="calendar">
-    <article>
+        <article>
     
         <h5>February</h5>
         <div class="flex-calendar">
@@ -112,29 +121,29 @@
           <div>7</div> 
         </div>
 
-    </article>
+        </article>
     </div> 
 
     <div id="todo-list">
-    <article>
-        <h5>Stuff to Do</h5>
-          <h5>
-          <div class="todo-container">
-            <input type="checkbox" class="first-checkbox">
-            <div class="first-todos">Get tires for truck</div>
-            <input type="checkbox" class="second-checkbox">
-            <div class="second-todos">Call uncle John about house taxes</div>
-            <input type="checkbox" class="third-checkbox">
-            <div class="third-todos">Set up scavenger hunt for Leah</div>
-            <input type="checkbox" class="fourth-checkbox">
-            <div class="fourth-todos">Pracice guitar</div>
-            <input type="checkbox" class="fifth-checkbox">
-            <div class="fifth-todos">Practice french</div>
-            <input type="checkbox" class="sixth-checkbox">
-            <div class="sixth-todos">Do coding homework</div>
-          </div>
-        </h5>
-    </article>
+        <article>
+            <h5>Stuff to Do</h5>
+            <h5>
+            <div class="todo-container">
+                <input type="checkbox" class="first-checkbox">
+                <div class="first-todos">Get tires for truck</div>
+                <input type="checkbox" class="second-checkbox">
+                <div class="second-todos">Call uncle John about house taxes</div>
+                <input type="checkbox" class="third-checkbox">
+                <div class="third-todos">Set up scavenger hunt for Leah</div>
+                <input type="checkbox" class="fourth-checkbox">
+                <div class="fourth-todos">Pracice guitar</div>
+                <input type="checkbox" class="fifth-checkbox">
+                <div class="fifth-todos">Practice french</div>
+                <input type="checkbox" class="sixth-checkbox">
+                <div class="sixth-todos">Do coding homework</div>
+            </div>
+            </h5>
+        </article>
     </div>    
 
     </div>
