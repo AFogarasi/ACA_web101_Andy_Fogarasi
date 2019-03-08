@@ -1,0 +1,25 @@
+body {
+    padding: 20px;
+    background-color:#ffffc9
+  }
+  
+  button {
+    width: 200px;
+    margin: 5px auto;
+    font-family: Garamond;
+    font-size: 100%;
+    background-color: azure;
+    border-radius: 5px;
+  }  
+  
+  /* button {
+    margin: .5rem 0;
+  } */
+
+  .head-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    background-color: white;
+}
+  
