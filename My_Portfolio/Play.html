@@ -2,30 +2,37 @@
 <html lang="en">
 
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Clicker</title>
 <Link rel="stylesheet" href="./src/Play_style.css">
 </head>
 
 <body>
-<header>
-
-<!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API -->
-
-<div class="head-container">
-        <button id = "findMe">Show my location</button><br/>
-        <p id = "status"></p>
-        <a id = "mapLink" target="_blank"></a>
-</div>
-
-
+<header>                
 </header>
-        <script src="./src/scripts/Play.js"></script>
 
-        <button onclick="myFunction()">Click me</button>
+<main>
+<div class="main-container">
 
-<input type="button" value="Make an X" onclick="make_an_X()">
+        <div id="click-game">
 
 
+                <div class="overlay">
+                        <img class="gif" width="350" src="https://media.giphy.com/media/3o6ZtjnyFWiWaw8oDK/giphy.gif" />
+                </div>
+
+                <h6 class="title">What is hidden?</h6>
+
+                <div class="counter"></div> 
+
+                <button class="button is-primary">Click!</button>
+
+
+        </div>
+</div>        
+</main>
+<script src="./src/scripts/Play.js"></script>   
 </body>
     
-
 </html>

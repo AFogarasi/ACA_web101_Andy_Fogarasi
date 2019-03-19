@@ -1,52 +1,28 @@
 function myFunction() {
       alert("Hello Andy Fogarasi!");
 }
+// Grab elements
+const title = document.querySelector('.title')
+const counter = document.querySelector('.counter')
+const button = document.querySelector('.button')
+const overlay = document.querySelector('.overlay')
 
-function geoFindMe() {
+// Initialize variable
+let count = 0;
 
-    const status = document.querySelector('#status');
-    const mapLink = document.querySelector('#mapLink');
+button.addEventListener('click', () => {
+  // Increment number for each click
+  counter.innerHTML = ++count
+	
   
-    mapLink.href = '';
-    mapLink.textContent = '';
-  
-    function success(position) {
-      const latitude  = position.coords.latitude;
-      const longitude = position.coords.longitude;
-  
-      status.textContent = '';
-      mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
-      mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
-    }
-  
-    function error() {
-      status.textContent = 'Unable to retrieve your location';
-    }
-  
-    if (!navigator.geolocation) {
-      status.textContent = 'Geolocation is not supported by your browser';
-    } else {
-      status.textContent = 'Locating…';
-      navigator.geolocation.getCurrentPosition(success, error);
-    }
-  
+  // Change title based on number value
+  if (count >= 10) {
+    title.innerHTML = `Getting Clearer ???`
+    overlay.style.display = 'block' 
+		const x = count / 100;
+    // Simple fade-in
+     setTimeout(() => overlay.style.opacity = .01 + x);
+  } else {
+    title.innerHTML = `You are at ${count} already`	
   }
-  
-  document.querySelector('#findMe').addEventListener('click', geoFindMe);
-  
-
-function make_an_X() {
-      // get the reference for the body
-      var body = document.getElementsByTagName("body")[0];
-
-  
-    
-      // creates a <p> element 
-      var p = document.createElement("p");
- 
-    console.log(p)
-
-      var cellText = document.createTextNode("X");
-      p.appendChild(cellText);
-      body.appendChild(p);
-}
+})
