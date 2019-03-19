@@ -4,7 +4,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  }
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -52,7 +52,8 @@ header > h3 {
     border: 2px solid rgb(68, 80, 92);
 }   
        
-h3 {font-size: 1em
+h3 {
+    font-size: 1em
 }
 
 h4 {
@@ -67,10 +68,10 @@ h4 {
     text-align: center;
     padding: 2px 5px 2px;
     border-radius: 5px;
-  }
+}
 
 h5 {
-    width: 430px;
+    width: 380px;
     margin: 1px;
     border-radius: 5px;
     font-family: Garamond;
@@ -80,7 +81,7 @@ h5 {
     color: black;
     text-align: center;
     padding: 0px 25px 0px;
-  }  
+}  
     
 .head-container {
     display: grid;
@@ -100,13 +101,14 @@ margin: 0px;
 #mapLink {
 margin: auto;
 }
+
 a:link {
     color: black;
-  }
+}
 
 .main-container {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 500px 1fr;
     grid-template-rows: auto;
     grid-gap: 5px 5px;
 }
@@ -118,29 +120,8 @@ button {
     font-size: 100%;
     background-color: azure;
     border-radius: 5px;
-  }  
-
-#calculator {
-    grid-row: 1 / 2;
-    grid-column: 1 / 2; 
-    align-self: right;
-  }
-
-#clock {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3; 
-  }
-
-#calendar {
-    grid-row: 3 / 4;
-    grid-column: 1 / 3; 
-  }
-
-#todo-list {
-    grid-row: 4 / 5;
-    grid-column: 1 / 3; 
-  }   
- 
+  } 
+   
 article {
     margin: 2px auto;
     width: 97%;
@@ -149,10 +130,164 @@ article {
     font-size: 110%;
     padding: 1%;
 }
+  
+/* Grid positioning of widgets - small screens */
+#calculator {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2; 
+    align-self: right;
+}
 
+#clock {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2; 
+}
+
+#calendar {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2; 
+}
+
+#todo-list {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2; 
+}  
+
+.click-game {
+    grid-row: 5 / 6;
+    grid-column: 1 / 2;  
+}
+
+#grayback {
+    grid-row: 5 / 6;
+    grid-column: 1 / 2;  
+}
+
+/* Grid positioning of widgets - medium screens */
+@media (min-width: 905px) {
+
+    .main-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px 5px;
+    } 
+
+    #clock {
+        grid-column: 3 / 4; 
+        grid-row: 1 / 2;
+    }    
+   
+    #calendar {
+        grid-row: 2 / 3;
+    }
+
+    #todo-list {
+        margin: auto;
+        width: 440px;
+        grid-row: 2 / 3;
+        grid-column: 3 / 4; 
+    }   
+      
+    .click-game {
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;  
+    }
+
+    #grayback {
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;  
+    }
+} 
+
+/* Grid positioning of widgets - large screens */
+ @media (min-width: 1300px) {
+    .main-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px 5px;
+    } 
+
+    .click-game {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;  
+    }
+    
+    #grayback {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;  
+    }
+} 
+
+/* Click-game begins */
+#grayback {
+    background: linear-gradient(360deg, rgb(97, 177, 226) 0%, rgba(221, 248, 250, 0.4) 100%);
+    background-color: gray;
+    width: 440px;
+    height: 270px;
+    margin-top: 10px; 
+    z-index: -2;
+} 
+
+.click-game {
+    width: 440px;
+    height: 270px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #f2f2f2;
+    border-radius: 3px;
+    border: 2px solid rgb(68, 68, 68);
+}
+  
+  .title {
+    width: 300px;
+    color: inherit;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(19, 17, 17);
+    margin-top: 0px;
+    margin-bottom: 5px; 
+}
+  
+  .counter {
+   font-size: 2rem;
+   font-weight: bold;
+   color: rgb(12, 87, 173);
+}
+  
+  .button {
+    font-size: 1rem;
+    width: 70px;
+    font-weight: bold;
+    margin-top: 5px;
+    text-transform: uppercase;
+    margin-top: 11rem;
+    background: rgb(184, 208, 224) 1%;
+}
+  
+  .overlay {
+    position: absolute;
+    width: 440px;
+    height: 270px;
+    display: none;
+    z-index: -1;
+    opacity: 0;
+    transition: all 1s; 
+}
+  
+  .overlay .gif {
+    width: 100%;
+    height: 100%;
+}
+/* Click-game ends */
+
+/* Calendar begins */
 .flex-calendar {
     display: flex;
-    width: 450px;
+    width: 400px;
     margin: 0px 5px;
     padding: 10px;
     border-radius: 5px;
@@ -160,7 +295,7 @@ article {
     justify-content: space-around;
     background-color: silver;
     border: solid rgb(36, 43, 49);
-  }
+}
   
 .flex-calendar > div {
     background-color: #444;
@@ -171,8 +306,9 @@ article {
     padding: 10px;
     font-size: 12px;
     color: goldenrod;
-  }
+}
   
+ /* Calculator Begins */ 
 .Calculator {
     width: 225px;
     padding: 5px;
@@ -205,20 +341,24 @@ article {
     text-align: center;
     margin: 3px;
 }
+/*Calculator ends */
   
+/* Clock begins */
 .clock {
     width: 200px;
     height: 200px;
     margin: auto;
-  } 
+} 
   
 #clock-pic {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     background-color: silver;
-  }
- 
+}
+/* Clock ends */
+
+/* To Do List begins */ 
 .todo-container {
     height: auto;
 	display: grid;
@@ -231,7 +371,7 @@ article {
         "fourthcheckbox fourthtodos"
         "fifthcheckbox fifthtodos"
         "sixthcheckbox sixthtodos";
-	width: 430px;
+	width: 380px;
 	margin-left: auto;
     margin-right: auto;
     padding: 10px;
@@ -251,7 +391,7 @@ input[type='checkbox']:checked {
 }
 
 .todo-container > div {
-    padding-left: 20px;
+    padding-left: 0px;
     padding-top: 10px;
     font-size: 18px;
     text-align: left;
@@ -265,6 +405,7 @@ input[type='checkbox']:checked {
 
 .first-todos {
     grid-area: firsttodos;
+    width: 325px;
 }
 
 .second-checkbox {
@@ -273,6 +414,7 @@ input[type='checkbox']:checked {
 
 .second-todos {
     grid-area: secondtodos;
+    width: 325px;
 }
 
 .third-checkbox {
@@ -281,6 +423,7 @@ input[type='checkbox']:checked {
 
 .third-todos {
     grid-area: thirdtodos;
+    width: 325px;
 }
 
 .fourth-checkbox {
@@ -289,6 +432,7 @@ input[type='checkbox']:checked {
 
 .fourth-todos {
     grid-area: fourthtodos;
+    width: 325px;
 }
 
 .fifth-checkbox {
@@ -297,6 +441,7 @@ input[type='checkbox']:checked {
 
 .fifth-todos {
     grid-area: fifthtodos;
+    width: 325px;
 }
 
 .sixth-checkbox {
@@ -305,32 +450,10 @@ input[type='checkbox']:checked {
 
 .sixth-todos {
     grid-area: sixthtodos;
+    width: 325px;
 }
-
     
 footer {
     font-family: Apple Chancery, cursive;
 }
-
-@media (min-width: 1000px) {
-
-    .main-container {
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        grid-gap: 20px 5px;
-    } 
-
-    #clock {
-        grid-column: 4 / 5; 
-      }    
-   
-    #calendar {
-        grid-row: 2 / 3;
-      }
-
-    #todo-list {
-        margin: 0px 0px 0px 300px;
-        grid-row: 2 / 3;
-        grid-column: 3 / 5; 
-      }   
-}
+/* To Do List ends */
