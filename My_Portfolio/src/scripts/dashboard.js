@@ -59,3 +59,22 @@ const x = count / 1000;
 title.innerHTML = `That's just ${count}, not enough...KEEP CLICKING!`	
 }
 })
+
+
+// Calculator
+// Identify elements for Calculator
+function insert (num) {
+  document.form.textview.value = document.form.textview.value+num;
+}
+
+function equal () {
+  var exp = document.form.textview.value;
+  if(exp) {
+  document.form.textview.value = eval(exp)
+    console.log(te)
+  }
+}
+
+function clean () {
+  document.form.textview.value = "";  
+}
