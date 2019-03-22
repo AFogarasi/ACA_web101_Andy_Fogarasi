@@ -309,14 +309,10 @@ article {
 }
   
  /* Calculator Begins */ 
-.Calculator {
+ .Calculator {
     width: 225px;
     padding: 5px;
     border-radius: 5px;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
     background-color:  silver;
     border: solid rgb(100, 76, 15);
     margin: auto;
@@ -333,14 +329,25 @@ article {
 }
 
 .box {
+    width: 50px;
+    height: 50px;
     background-color: #444;
     color: goldenrod;
     border-radius: 5px;
     padding: 5px;
     font-size: 150%;
-    text-align: center;
-    margin: 3px;
+    margin: 1px;
+    cursor: pointer;
 }
+
+.textview {
+    width: 205px;
+    margin: 3px;
+    font-size: 25px;
+    padding: 5px;
+    border: 1px solid black;
+  }
+  
 /*Calculator ends */
   
 /* Clock begins */
