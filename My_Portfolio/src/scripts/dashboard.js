@@ -50,7 +50,7 @@ counter.innerHTML = ++count
 
 // Change title based on number value
 if (count >= 10) {
-title.innerHTML = `Getting Clearer ??? Keep Clicking. Try some Glasses`
+title.innerHTML = `Getting Clearer??? Keep Clicking. Try some Glasses`
 overlay.style.display = 'block' 
 const x = count / 1000;
 // Simple fade-in
