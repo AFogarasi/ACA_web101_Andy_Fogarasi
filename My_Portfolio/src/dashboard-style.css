@@ -82,6 +82,11 @@ h5 {
     text-align: center;
     padding: 0px 25px 0px;
 }  
+
+h6 {
+    font-family: Garamond; 
+    font-size: 13px;  
+}
     
 .head-container {
     display: grid;
@@ -220,16 +225,16 @@ article {
 
 /* Click-game begins */
 #grayback {
-    background: linear-gradient(360deg, rgb(97, 177, 226) 0%, rgba(221, 248, 250, 0.4) 100%);
+    background: linear-gradient(360deg, rgb(78, 89, 253) 0%, rgba(218, 165, 32, 0.4) 100%);
     background-color: gray;
     width: 440px;
-    height: 270px;
+    height: 273px;
     margin-top: 10px; 
     z-index: -2;
 } 
 
 .click-game {
-    width: 440px;
+    width: 436px;
     height: 270px;
     margin-top: 10px;
     display: flex;
@@ -259,13 +264,14 @@ article {
 }
   
   .button {
-    font-size: 1rem;
+    font-size: 15px;
+    color: white;
     width: 70px;
     font-weight: bold;
     margin-top: 5px;
     text-transform: uppercase;
     margin-top: 11rem;
-    background: rgb(184, 208, 224) 1%;
+    background: rgb(78, 89, 253) 1%;
 }
   
   .overlay {
